@@ -12,7 +12,7 @@ namespace boolean
 
         static void Main(string[] args)
         {
-            p(Math.Abs (-1));
+
         }
 
         static void ex1(int A)
@@ -207,7 +207,13 @@ namespace boolean
 
         static void ex37(int x, int y, int x2, int y2)
         {
+            int Ymagn, Xmagn;
 
+            Ymagn = Math.Abs(y - y2);
+            Xmagn = Math.Abs(x - x2);
+
+            if (Ymagn <= 1 && Xmagn <= 1) p("Yes");
+            else p("Nope");
         }
 
         static void ex38 (int x, int y, int x2, int y2)
@@ -216,6 +222,9 @@ namespace boolean
             else p("Nope");
         }
 
-
+        static void ex39(int x, int y, int x2, int y2)
+        {
+            if ((x == x2 || y == y2) || (x == y && x2 == y2)) p("Yes");
+        }
     }
 }
