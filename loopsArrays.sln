@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loopsArrays", "loopsArrays\loopsArrays.csproj", "{415F0012-B214-4BDB-A952-DC6588ECCF35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{415F0012-B214-4BDB-A952-DC6588ECCF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415F0012-B214-4BDB-A952-DC6588ECCF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415F0012-B214-4BDB-A952-DC6588ECCF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415F0012-B214-4BDB-A952-DC6588ECCF35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0287C437-36D7-4A30-A464-D0262D20D944}
+	EndGlobalSection
+EndGlobal

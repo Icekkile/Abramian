@@ -136,8 +136,8 @@ namespace boolean
             int s1 = A / 100;
             int s2 = (A % 100) / 10;
             int s3 = (A % 100) % 10;
-            if (s1 < s2 < s3) p("Yes");
-            else p("Nope");
+            //if (s1 < s2 < s3) p("Yes");
+            //else p("Nope");
         }
 
         static void ex22(int A)
@@ -145,9 +145,9 @@ namespace boolean
             int s1 = A / 100;
             int s2 = (A % 100) / 10;
             int s3 = (A % 100) % 10;
-            if (s1 < s2 < s3) p("Yes from lowest to the largest");
-            else if (s1 > s2 > s3) p("Yes from the largest to lowest");
-            else p("Nope");
+            //if (s1 < s2 < s3) p("Yes from lowest to the largest");
+            //else if (s1 > s2 > s3) p("Yes from the largest to lowest");
+            //else p("Nope");
         }
 
         static void ex23(int A)
@@ -193,10 +193,10 @@ namespace boolean
 
         static void ex35(int x, int y, int x2, int y2)
         {
-            bool a, b;
-            if ((x % 2 != 1 && y % 2 != 1) || (x % 2 == 1 && y % 2 == 1)) { p("black"); a = true; }
-            if ((x2 % 2 != 1 && y2 % 2 != 1) || (x2 % 2 == 1 && y2 % 2 == 1)) { p("black"); a = true; }
-            if (a == b) p("Yes");
+            //bool a, b;
+            //if ((x % 2 != 1 && y % 2 != 1) || (x % 2 == 1 && y % 2 == 1)) { p("black"); a = true; }
+            //if ((x2 % 2 != 1 && y2 % 2 != 1) || (x2 % 2 == 1 && y2 % 2 == 1)) { p("black"); a = true; }
+            //if (a == b) p("Yes");
         }
 
         static void ex36 (int x, int y, int x2, int y2)
