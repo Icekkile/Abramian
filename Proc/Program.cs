@@ -77,11 +77,42 @@ namespace Proc
             return res;
         }
 
-        static bool Even (int k) { return k % 2 == 0 ? true : false; }
+        static bool IsPower5 (int k)
+        {
+            int v = 5;
+            while (v < k) { v *= v; }
+            return v == k;
+        }
+
+        static bool IsPowerN(int k, int n)
+        {
+            int v = n;
+            while (v < k) { v *= v; }
+            return v == k;
+        }
+
+        static bool Even (int k) { return k % 2 == 0; }
 
         static bool IsSquare (int k)
         {
             return Math.Sqrt(k) % 1 == 0;
+        }
+
+        static bool IsPrime(int n) => false;
+
+        static int DigitCount (int k)
+        {
+            string kCount = Convert.ToString(k);
+            return kCount.Length;
+        }
+
+        static int DigitN (int k, int n)
+        {
+            string kCount = Convert.ToString(k);
+            if (kCount.Length < n) return -1;
+            string kTurned = "";
+            for (int i = kCount.Length; i > 0; i--) { kTurned += kCount[i]; }
+            return Convert.ToInt32 (kTurned[n]);
         }
 
         static void Ex16(int A, int B)
@@ -150,6 +181,30 @@ namespace Proc
             int sv = 0;
             foreach (int i in arr) { sv += IsSquare(arr[i]) ? 1 : 0; }
 
+        }
+
+        static void Ex26 (int[] arr)
+        {
+            int sv = 0;
+            foreach (int i in arr) { sv += IsPower5(arr[i]) ? 1 : 0; }
+        }
+
+        static void Ex27 (int[] arr, int n)
+        {
+            int sv = 0;
+            foreach (int i in arr) { sv += IsPowerN(arr[i], n) ? 1 : 0; }
+        }
+
+        static void Ex29 (int[] arr)
+        {
+            int[] sv = new int[arr.Length];
+            foreach (int i in sv) { sv[i] = DigitCount(arr[i]); }
+        }
+
+        static void Ex30 (int[] arr)
+        {
+            int[] ColofNums = new int[arr.Length];
+            foreach (int i in ColofNums) { ColofNums[i] = DigitN(arr[i], i)}
         }
     }
 }
