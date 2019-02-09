@@ -11,10 +11,13 @@ namespace loopsArrays
         static void p(int T) { Console.WriteLine(T); }
         static void p(string T) { Console.WriteLine(T); }
         static void p(double T) { Console.WriteLine(T); }
+        static void p(float T) { Console.WriteLine(T); }
 
         static void Main(string[] args)
         {
-            WhileEx();
+            double f = 1 / 3.0f;
+            p(3 * f - 1);
+            Console.Read();
         }
 
         /*static void Dalay (int time)

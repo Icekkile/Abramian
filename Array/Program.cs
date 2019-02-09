@@ -139,6 +139,80 @@ namespace Array
             
         }
 
+        // __________________________________________________________________________________________________________________
+        
+        static int Ex18 (int[] arr)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (arr[i] < arr[9]) return arr[i];
+            }
+            return 0;
+        }
 
+        static int Ex19(int[] arr)
+        {
+            for (int i = 9; i > 1; i--)
+            {
+                if (arr[0] < arr[i] && arr[i] < arr[9]) return arr[i];
+            }
+            return 0;
+        }
+
+        static int Ex20 (int[] arr, int k, int l)
+        {
+            int sum = 0;
+            for (int i = k; i <= l; i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        static int Ex21(int[] arr, int k, int l)
+        {
+            int sum = 0, res = 0;
+            for (int i = k; i <= l; i++)
+            {
+                sum += arr[i];
+            }
+            res = sum / (Math.Abs(l - k) + 1);
+            return res;
+
+        }
+
+        static float Ex22 (int[] arr, int k, int l)
+        {
+            int sum = 0;
+            foreach (int i in arr)
+            {
+                i = arr[0];
+                if (k <= i && i <= l) continue;
+                sum += i;
+            }
+            float res = sum / (k - 1 + arr.Length - l - 1);
+            return res;
+        }
+
+        static int Ex24 (int[] arr)
+        {
+            int d = arr[1] - arr[0];
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if (arr[0] + d * i != arr[i]) return 0;
+            }
+            return d;
+        }
+
+        /*static int Ex25(int[] arr)
+        {
+            int d = arr[1] - arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[0] + d * i != arr[i]) return 0;
+            }
+            return d;
+        }*/
+
+        //static void Ex26 ()
     }
-}
